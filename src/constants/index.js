@@ -52,6 +52,7 @@ export const users = [
     red: true,
     bg: "/profile_one_bg.svg",
     icon: "/profile_round_one.svg",
+    relationship: "dating",
   },
   {
     name: "Emeka",
@@ -63,6 +64,7 @@ export const users = [
     red: false,
     bg: "/profile_two_bg.svg",
     icon: "/profile_round_two.svg",
+    relationship: "marriage",
   },
   {
     name: "Fatima",
@@ -74,6 +76,7 @@ export const users = [
     red: true,
     bg: "/profile_three_bg.svg",
     icon: "/profile_round_three.svg",
+    relationship: "friendship",
   },
   {
     name: "John",
@@ -85,6 +88,7 @@ export const users = [
     red: true,
     bg: "/profile_four_bg.svg",
     icon: "/profile_round_four.svg",
+    relationship: "professional",
   },
   {
     name: "Amaka",
@@ -96,6 +100,7 @@ export const users = [
     red: true,
     bg: "/profile_two_bg.svg",
     icon: "/profile_round_two.svg",
+    relationship: "dating",
   },
   {
     name: "Bolu",
@@ -107,6 +112,7 @@ export const users = [
     red: true,
     bg: "/profile_four_bg.svg",
     icon: "/profile_round_four.svg",
+    relationship: "marriage",
   },
   {
     name: "Chidera",
@@ -117,6 +123,7 @@ export const users = [
     read: false,
     bg: "/profile_three_bg.svg",
     icon: "/profile_round_three.svg",
+    relationship: "friendship",
   },
   {
     name: "Sadiq",
@@ -128,6 +135,7 @@ export const users = [
     red: false,
     bg: "/profile_one_bg.svg",
     icon: "/profile_round_one.svg",
+    relationship: "professional",
   },
   {
     name: "Grace",
@@ -139,6 +147,7 @@ export const users = [
     red: true,
     bg: "/profile_two_bg.svg",
     icon: "/profile_round_two.svg",
+    relationship: "dating",
   },
   {
     name: "Uchenna",
@@ -149,6 +158,7 @@ export const users = [
     read: true,
     bg: "/profile_three_bg.svg",
     icon: "/profile_round_three.svg",
+    relationship: "marriage",
   },
   {
     name: "Amina",
@@ -160,6 +170,7 @@ export const users = [
     red: true,
     bg: "/profile_one_bg.svg",
     icon: "/profile_round_one.svg",
+    relationship: "friendship",
   },
   {
     name: "Olu",
@@ -171,6 +182,7 @@ export const users = [
     red: true,
     bg: "/profile_one_bg.svg",
     icon: "/profile_round_one.svg",
+    relationship: "professional",
   },
   {
     name: "Esther",
@@ -182,6 +194,7 @@ export const users = [
     red: true,
     bg: "/profile_one_bg.svg",
     icon: "/profile_round_one.svg",
+    relationship: "dating",
   },
   {
     name: "Paul",
@@ -193,6 +206,7 @@ export const users = [
     red: true,
     bg: "/profile_three_bg.svg",
     icon: "/profile_round_three.svg",
+    relationship: "marriage",
   },
   {
     name: "Tunde",
@@ -204,5 +218,6 @@ export const users = [
     red: false,
     bg: "/profile_two_bg.svg",
     icon: "/profile_round_two.svg",
+    relationship: "friendship",
   },
 ];

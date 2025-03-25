@@ -38,7 +38,7 @@ const Page = () => {
                     +
                   </button>
                 </div>
-                <div className="ml-8 md:mt-6">
+                <div className="ml-8 mt-4 md:mt-6">
                   <div className="flex  items-center space-x-4">
                     <span className="text-base font-semibold">
                       Temiloluwa, 27
