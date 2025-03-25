@@ -11,18 +11,39 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useDispatch, useSelector } from "react-redux";
-import { openSidebar, closeSidebar, openMobileSidebar, closeMobileSidebar } from "@/store/sidebarSlice";
+import { useEffect } from "react";
+import {
+  openMobileSidebar,
+  closeMobileSidebar,
+} from "@/store/sidebarSlice";
 
 const MobileSidebar = () => {
   const pathname = usePathname();
   const dispatch = useDispatch();
   const isSidebarOpen = useSelector((state) => state.sidebar.isMobileOpen);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024) {
+        dispatch(closeMobileSidebar());
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); 
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [dispatch]);
+
   return (
     <nav className="lg:flex gap-2 hidden">
       <Sheet
         open={isSidebarOpen}
-        onOpenChange={(open) => dispatch(open ? openMobileSidebar() : closeMobileSidebar())}
+        onOpenChange={(open) =>
+          dispatch(open ? openMobileSidebar() : closeMobileSidebar())
+        }
       >
         <SheetContent className="rounded-sm sm:w-64 h-[100vh]">
           <div>
@@ -35,14 +56,14 @@ const MobileSidebar = () => {
               />
             </div>
 
-            <ul className="mt-4 flex flex-col px-10  items-center justify-center w-full">
+            <ul className="mt-4 flex flex-col px-10 items-center justify-center w-full">
               {sidebarLinks.map((link) => {
                 const isActive = link.route === pathname;
 
                 return (
                   <li
                     key={link.route}
-                    className={`w-full flex  rounded  justify-items-start items-center whitespace-pre text-dark-700 ${
+                    className={`w-full flex rounded justify-items-start items-center whitespace-pre text-dark-700 ${
                       isActive ? "bg-[#EF2424] text-white" : ""
                     }`}
                   >
@@ -70,3 +91,4 @@ const MobileSidebar = () => {
 };
 
 export default MobileSidebar;
+

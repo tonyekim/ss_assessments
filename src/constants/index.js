@@ -48,7 +48,10 @@ export const users = [
     location: "Abuja",
     match: "85%",
     verified: true,
-    read: false,
+    read: true,
+    red: true,
+    bg: "/profile_one_bg.svg",
+    icon: "/profile_round_one.svg",
   },
   {
     name: "Emeka",
@@ -57,6 +60,9 @@ export const users = [
     match: "92%",
     verified: true,
     read: true,
+    red: false,
+    bg: "/profile_two_bg.svg",
+    icon: "/profile_round_two.svg",
   },
   {
     name: "Fatima",
@@ -65,6 +71,9 @@ export const users = [
     match: "78%",
     verified: false,
     read: false,
+    red: true,
+    bg: "/profile_three_bg.svg",
+    icon: "/profile_round_three.svg",
   },
   {
     name: "John",
@@ -73,6 +82,9 @@ export const users = [
     match: "88%",
     verified: true,
     read: true,
+    red: true,
+    bg: "/profile_four_bg.svg",
+    icon: "/profile_round_four.svg",
   },
   {
     name: "Amaka",
@@ -81,6 +93,9 @@ export const users = [
     match: "81%",
     verified: false,
     read: false,
+    red: true,
+    bg: "/profile_two_bg.svg",
+    icon: "/profile_round_two.svg",
   },
   {
     name: "Bolu",
@@ -89,6 +104,9 @@ export const users = [
     match: "89%",
     verified: true,
     read: true,
+    red: true,
+    bg: "/profile_four_bg.svg",
+    icon: "/profile_round_four.svg",
   },
   {
     name: "Chidera",
@@ -97,6 +115,8 @@ export const users = [
     match: "95%",
     verified: true,
     read: false,
+    bg: "/profile_three_bg.svg",
+    icon: "/profile_round_three.svg",
   },
   {
     name: "Sadiq",
@@ -105,6 +125,9 @@ export const users = [
     match: "80%",
     verified: false,
     read: true,
+    red: false,
+    bg: "/profile_one_bg.svg",
+    icon: "/profile_round_one.svg",
   },
   {
     name: "Grace",
@@ -113,6 +136,9 @@ export const users = [
     match: "87%",
     verified: true,
     read: false,
+    red: true,
+    bg: "/profile_two_bg.svg",
+    icon: "/profile_round_two.svg",
   },
   {
     name: "Uchenna",
@@ -121,6 +147,8 @@ export const users = [
     match: "79%",
     verified: false,
     read: true,
+    bg: "/profile_three_bg.svg",
+    icon: "/profile_round_three.svg",
   },
   {
     name: "Amina",
@@ -129,6 +157,9 @@ export const users = [
     match: "90%",
     verified: true,
     read: false,
+    red: true,
+    bg: "/profile_one_bg.svg",
+    icon: "/profile_round_one.svg",
   },
   {
     name: "Olu",
@@ -137,6 +168,9 @@ export const users = [
     match: "85%",
     verified: false,
     read: true,
+    red: true,
+    bg: "/profile_one_bg.svg",
+    icon: "/profile_round_one.svg",
   },
   {
     name: "Esther",
@@ -145,6 +179,9 @@ export const users = [
     match: "83%",
     verified: true,
     read: false,
+    red: true,
+    bg: "/profile_one_bg.svg",
+    icon: "/profile_round_one.svg",
   },
   {
     name: "Paul",
@@ -153,6 +190,9 @@ export const users = [
     match: "91%",
     verified: false,
     read: true,
+    red: true,
+    bg: "/profile_three_bg.svg",
+    icon: "/profile_round_three.svg",
   },
   {
     name: "Tunde",
@@ -161,5 +201,8 @@ export const users = [
     match: "86%",
     verified: true,
     read: false,
+    red: false,
+    bg: "/profile_two_bg.svg",
+    icon: "/profile_round_two.svg",
   },
 ];

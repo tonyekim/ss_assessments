@@ -9,7 +9,7 @@ const FilterComponent = () => {
           <Image src="/search.svg" alt="search-icon" width={25} height={25} />
         </span>
         <input
-          className="block w-full min-w-[70px] placeholder:text-[#00000099] py-3 pl-12 pr-4 text-base font-medium leading-normal bg-white border border-solid outline-none appearance-none placeholder:text-secondary-dark peer text-stone-500 border-2 border-[#00000099] bg-clip-padding rounded-4xl"
+          className="block w-full min-w-[70px] placeholder:text-[#00000099] py-3 pl-12 pr-4 text-base font-medium leading-normal bg-white border border-solid outline-none appearance-none placeholder:text-secondary-dark peer text-stone-500 border-[#00000099] bg-clip-padding rounded-4xl"
           placeholder="Search..."
           type="text"
         />
@@ -20,7 +20,7 @@ const FilterComponent = () => {
           <span className="text-[#00000099] text-base font-medium">Filter</span>
         </span>
 
-        <div className="block w-full min-w-[70px] py-6 pl-16 pr-16 text-base font-medium leading-normal bg-white border border-solid outline-none appearance-none placeholder:text-secondary-dark peer text-stone-500 border-2 border-[#00000099] bg-clip-padding rounded-4xl" />
+        <div className="block w-full min-w-[70px] py-6 pl-16 pr-16 text-base font-medium leading-normal bg-white border border-solid outline-none appearance-none placeholder:text-secondary-dark peer text-stone-500  border-[#00000099] bg-clip-padding rounded-4xl" />
       </div>
     </div>
   );
