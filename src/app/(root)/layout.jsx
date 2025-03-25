@@ -16,7 +16,7 @@ export default function Layout({ children }) {
         <MobileSidebar />
         </div>
         <div className="mt-4 flex-1 overflow-auto  lg:mt-0 lg:max-h-screen lg:pb-10">
-          <div className=" mx-auto md:px-10 w-full text-dark-400 p-16-regular">
+          <div className=" mx-auto  w-full text-dark-400 p-16-regular">
             {children}
           </div>
         </div>

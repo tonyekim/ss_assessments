@@ -23,7 +23,7 @@ const Home = () => {
     return () => clearTimeout(timer);
   }, []);
   return (
-    <main>
+    <main className="md:px-10">
       <div className="mb-6 lg:hidden">
       <FilterComponent />
       </div>

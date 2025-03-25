@@ -3,7 +3,10 @@ import React from "react";
 
 const Page = () => {
   return (
-    <section className="bg-[#F6F6F6] w-full p-2 lg:p-8">
+    <main className="bg-[#F6F6F6]">
+
+    
+    <section className=" w-full p-2 lg:p-8 md:px-10">
       <div className="relative ">
         {/* Background Banner */}
         <div
@@ -41,7 +44,7 @@ const Page = () => {
                       Temiloluwa, 27
                     </span>
                     <Image
-                      src="/create.svg"
+                      src="/creates.svg"
                       width={20}
                       height={20}
                       alt="pencil"
@@ -119,7 +122,7 @@ const Page = () => {
           <div className="flex items-center justify-between">
             <h3 className="text-sm font-semibold">My Hobbies</h3>
             <Image
-              src="/create.svg"
+              src="/creates.svg"
               width={20}
               height={20}
               alt="pencil"
@@ -179,7 +182,7 @@ const Page = () => {
           <div className="flex items-center justify-between">
             <h3 className="text-sm font-semibold">My Interests</h3>
             <Image
-              src="/create.svg"
+              src="/creates.svg"
               width={20}
               height={20}
               alt="pencil"
@@ -371,6 +374,7 @@ const Page = () => {
         </div>
       </div>
     </section>
+    </main>
   );
 };
 
