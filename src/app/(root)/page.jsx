@@ -12,7 +12,8 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import UserCard from "@/components/UserCard";
-import {users} from "../../constants/index"
+import { users } from "../../constants/index";
+import FilterComponent from "@/components/FilterComponent";
 
 const Home = () => {
   const [progress, setProgress] = React.useState(13);
@@ -23,6 +24,9 @@ const Home = () => {
   }, []);
   return (
     <main>
+      <div className="mb-6 lg:hidden">
+      <FilterComponent />
+      </div>
       <section className="flex flex-col px-4 lg:px-0 md:flex-row mb-10 md:mb-0 lg:my-10">
         <div className="flex md:mb-10 lg:mb-0 items-center space-x-4">
           <Image
@@ -65,10 +69,10 @@ const Home = () => {
         </div>
       </section>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-      {users.map((user, index) => (
-        <UserCard key={index} user={user} />
-      ))}
-    </div>
+        {users.map((user, index) => (
+          <UserCard key={index} user={user} />
+        ))}
+      </div>
     </main>
   );
 };

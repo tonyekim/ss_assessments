@@ -1,6 +1,12 @@
+"use client";
 import Image from "next/image";
+import { useDispatch, useSelector } from "react-redux";
+import Link from "next/link";
+import { TiThMenuOutline } from "react-icons/ti";
+import { openSidebar, openMobileSidebar } from "@/store/sidebarSlice";
 
 const Navbar = () => {
+  const dispatch = useDispatch();
   return (
     <main className="">
     <header className="flex shadow py-4 px-4 sm:px-10 bg-white font-sans min-h-[70px] tracking-wide relative z-50">
@@ -57,8 +63,7 @@ const Navbar = () => {
                 alt="profile"
               />
             </button>
-            <button
-           
+            <Link href="/profile"
               className="relative flex rounded-full bg-gray-800 text-sm text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
             >
               <Image
@@ -67,8 +72,10 @@ const Navbar = () => {
                 src="/travel-agent.png"
                 alt="profile"
               />
-            </button>
+            </Link>
           </div>
+
+          <TiThMenuOutline onClick={() => dispatch(openMobileSidebar())} size={24} className="lg:hidden cursor-pointer" />
         </div>
       </div>
     </header>
